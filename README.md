@@ -13,6 +13,7 @@ npm install
 
 Lancer l'API
 ```
+npm run build
 npm start
 ```
 
@@ -34,3 +35,31 @@ npm start
 - Manager
   - Gérer les catégories
   - Gérer les produits
+
+
+Documentation : `/documentation/v1.0.0`
+
+
+#### S'inscrire
+
+> Ne pas oublier le remplacer `http://localhost:1337` par l'URL ngrok.
+
+POST : `http://localhost:1337/auth/local/register`
+```
+{
+  "username": "Jean",
+  "email": "jean@domaine.com",
+  "password": "password"
+}
+```
+
+
+#### Se connecter
+
+POST : `http://localhost:1337/auth/local`
+```
+{
+  "identifier": "jean@domaine.com",
+  "password": "password"
+}
+```
