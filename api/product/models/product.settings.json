@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "Produits",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "unique": false,
+      "min": 0
+    },
+    "quantity": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    }
+  }
+}
